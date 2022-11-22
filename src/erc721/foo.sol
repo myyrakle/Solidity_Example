@@ -12,7 +12,7 @@ contract Foo is ERC721, Pausable, Ownable, ERC721Burnable, ERC721Enumerable {
     using Strings for uint256;
 
     bytes32 public merkleRoot;
-    mapping(uint256 => mapping(address => uint256)[]) public listOfWhiteList;
+    mapping(uint256 => mapping(address => uint256)) public listOfWhiteList;
 
     mapping(address => uint256) public mintCount;
 
